@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('started');
 });
 
 Route::get('/started', function () {
-    return view('started');
+    return view('welcome');
 });
