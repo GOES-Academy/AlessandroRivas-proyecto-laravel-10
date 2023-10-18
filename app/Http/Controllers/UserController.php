@@ -30,7 +30,7 @@ class UserController extends Controller
     ]);
 
     if ($validator->fails()) {
-      return response()->json($validator->errors(), 401);
+      return response()->json($validator->errors(), 422);
     }
 
     return response()->json('Hi ' . $request->userName, 200);
